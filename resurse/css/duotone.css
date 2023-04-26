@@ -1,0 +1,66 @@
+body{
+    --culoare1: rgb(127, 102, 157);
+    --culoare2: rgb(186, 148, 209);
+    --culoare3: rgb(251, 250, 205);
+    --culoare4: rgb(222, 186, 206);
+    --culoare5: rgb(167, 49, 171);
+    --avisited: rgb(127, 102, 157); 
+    --c1gradient: rgb(186, 148, 209);
+    --culoare-margini: rgb(167, 49, 171);
+  
+    --body_color: var(--culoare3);
+    --text_color:black;
+    
+    --background-color: var(--body_color);
+    --spatiere_pagina: 50px; /*a*/
+    --padding_sectiune: 15px;
+    --min_width: 450px; /*imagine mare pe ecran mic - apare scroll barul*/
+    
+    --spatiere_footer: 150px;
+  }
+
+#imagine {
+    position: relative;
+    background-image: url("/resurse/imagini/tricouri de cuplu.png");
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+    transition: all 2s linear;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border: 3px solid var(--culoare3);
+    overflow: hidden;
+}
+
+#imagine:after,
+#imagine:before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+#imagine:after {
+    background-color: var(--culoare4);
+    /* mix-blend-mode: lighten; */
+    opacity: 0.3;
+    right: -100%;
+}
+
+#imagine:before {
+    background-color: var(--culoare1);
+    mix-blend-mode: darken;
+    opacity: 0.7;
+    left: -100%;
+}
+
+
+#imagine:hover:after {
+    right: 0;
+}
+
+#imagine:hover:before {
+    left: 0;
+}

@@ -1,0 +1,34 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"primavara1.png",
+			"descriere":"fusta",
+			"luni":["martie","aprilie","mai"]
+		},
+		{
+			"fisier":"vara1.png",
+			"descriere":"fusta",
+			"luni":["iunie","iulie","august"]
+			
+		},
+		{
+			"fisier":"toamna1.png",
+			"descriere":"pantaloni",
+			"luni":["septembrie","octombrie","noiembrie"]
+		},
+		{
+			"fisier":"iarna3.png",
+			"descriere":"bluza",
+			"luni":["decembrie", "ianuarie", "februarie"]
+		},
+		{
+			"fisier":"vara2.png",
+			"descriere":"top"
+		},
+		{
+			"fisier":"primavara2.png",
+			"descriere":"jacheta"
+		}
+	]
+}
